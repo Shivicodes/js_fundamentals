@@ -80,6 +80,107 @@ do{
 }
 while(i<5)
 
+// function:RETURN vs procedures
+
+//block of code need to be executed many times
+// i need to supply parameters of diff types , diff size, diff val
+// sum(a,b)  sum(b,c)  sum(c,c)
+// change one time in a block and when ever u call it will be evaluated like that
+//let s1="sandy';
+
+//template literals
+let by1="priyansh"
+let by2="garvit"
+let s1=`${by1} and ${by2}`
+let fruits='bana\'na'
+let fruit='banana'
+console.log(fruits.length)
+console.log(fruit.length)
+
+let tester="testme"
+let growth="growth"
+console.log(tester);
+console.log(tester.toLowerCase());
+console.log(tester.toUpperCase());
+//on applying the func. the original string remains the same only the new string is returned.
+console.log(tester.slice(2,4));
+console.log(tester.slice(2));
+tester.replace("test","prep");
+tester.concat("is a friend",growth);
+let trimer="     glow    ";
+trimer.trim()
+console.log(trimer)
+// strings r immutable
+let fr="shikha"
+fr[0]="ritika"; // no erroer but no change in str
+console.log(fr);  // it will print shikha 
+
+let str="samuel\"";
+console.log(str); //7
+let stentence="hello i am here";
+let word="am";
+if(stentence.includes(word)){  //startswith . endswith
+    console.log(`the word "${word}" ${stentence.includes(word)?'is':'is not '} in the sentence`);
+}
+
+//                                    .........ARRAYS.....
+// more than one type of data can be put
+let arr=[10,20,"hello",null,false]
+console.log(arr[10]); //NO ERROR  undefined 
+console.log(arr.length);//5
+arr[2]=12/7;
+console.log(arr);  // change will be reflected MUTABLE
+console.log(typeof arr)// object
+console.log(arr.toString());
+let joiner=arr.join('-');
+
+console.log(joiner);
+//pop same arr is returned 
+arr.pop();
+console.log(arr);
+//push new arr ; add element in end
+let r=arr.shift() // removes element from start
+console.log(r,arr);
+let r1=arr.unshift(123); //add element to the start 
+console.log(r1);
+
+
+//DELETE
+
+let arr1=[1,2,3,4,5,6,7,8,9]
+console.log(arr1[0]);
+console.log(arr1.length);
+delete arr1[0]
+console.log(arr1.length);
+console.log(arr1[0]);
+console.log(arr1[1]);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
